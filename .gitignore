@@ -1,1 +1,61 @@
-/tmp
+# Archivos del sistema/IDE
+.DS_Store
+Thumbs.db
+
+# Binarios y artefactos de compilación Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Directorios de build/distribución
+bin/
+build/
+dist/
+release/
+
+# Depuración (Delve)
+debug
+__debug_bin
+
+# Cobertura y perfiles
+coverage.txt
+coverage.out
+coverage.html
+*.cover
+*.cov
+*.lcov
+*.prof
+*.pprof
+cpu.pprof
+mem.pprof
+
+# Cachés y temporales
+.cache/
+tmp/
+*.tmp
+*.bak
+*~
+
+# Configuración local
+.env
+.env.*
+!.env.example
+.local/
+*.local.yaml
+*.local.yml
+
+# Docker/compose locales
+docker-compose.override.yml
+
+# Módulos/Workspaces: NO ignores
+!go.mod
+!go.sum
+!go.work
+!go.work.sum
+
+# Dependencias vendorizadas (opcional; comenta o descomenta según política del repo)
+# vendor/
